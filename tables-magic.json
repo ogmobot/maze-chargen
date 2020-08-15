@@ -64,7 +64,7 @@
     "mutations": [
     ],
     "insanities": [
-        "always lies", "always polite", "believes they are {*an:monsters:animals}", "cannot count", "cannot lie", "faceblind",
+        "always lies", "always polite", "believes they are {*an} {monsters:animals}", "cannot count", "cannot lie", "faceblind",
         "fears birds", "fears blood", "fears books", "fears darkness", "fears fire", "fears gold",
         "fears horses", "fears iron", "fears music", "fears own hand", "fears PC", "fears rain",
         "fears rivers", "fears silence", "fears sleep", "fears sunlight", "fears the moon", "fears trees",

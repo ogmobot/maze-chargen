@@ -7,6 +7,35 @@
         "metal file", "rations (3)", "rope (50 ft.)", "steel wire", "shovel", "steel mirror",
         "ten foot pole", "tinderbox", "torch", "vial of acid", "vial of poison", "waterskin"
     ],
+    "miscellaneous items": [
+        "bowl"
+    ],
+    "worn items": [
+        "belt"
+    ],
+    "book subjects": [
+        "alchemy"
+    ],
+    "tool items": [
+        "acid flask"
+    ],
+    "potions": [
+        "{monsters:animals}-form"
+    ],
+    "magical ingredients": [
+        "ancient liquor"
+    ],
+    "treasure items": [
+        "alchemy recipe", "amulet", "astrolabe", "set of blueprints", "calligraphy", "carpet",
+        "compass", "contract", "crown", "crystal", "deed", "embroidery",
+        "set of fine china", "fine liquor", "instrument", "magical book", "microscope", "music box",
+        "orrery", "painting", "perfume", "prayer book", "printing block", "rare textile",
+        "set of royal robes", "saint's relic", "scrimshaw", "sextant", "sheet music", "signet ring",
+        "set of silverware", "spices", "spyglass", "tapestry", "telescope", "treasure map"
+    ],
+    "treasure traits": [
+        "altered"
+    ],
     "weapon names": {
         "light": [
             "axe",

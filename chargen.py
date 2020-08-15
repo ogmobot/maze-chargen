@@ -26,14 +26,15 @@ def parse_table_option(s):
         elif m[1] == "*npc":
             # TODO make actual NPC?
             return parse_table_option(s.replace(m[0], make_random_name()))
-        elif m[1].startswith("*an"):
-            parts = m[1].split(":")
-            word = parse_table_option(f"{{{':'.join(parts[1:])}}}")
-            if word and word[0] in "aeiou":
+        elif m[1] == "*an":
+            first, second = s.split("{*an}", 1)
+            first = parse_table_option(first.rstrip())
+            second = parse_table_option(second.lstrip())
+            if second and second[0].lower() in "aeiou":
                 article = "an"
             else:
                 article = "a"
-            return s.replace(m[0], f"{article} {word}")
+            return f"{first} {article} {second}"
         else:
             # Can't find this special case
             return s
@@ -142,6 +143,8 @@ def format_npc(n):
         ("Appearance",      cfl(n["appearance"])),
         ("Physical detail", cfl(n["physical detail"])),
         ("Personality",     cfl(n["personality"])),
+        ("Mannerism",       cfl(n["mannerism"])),
+        ("Misfortune",      cfl(n["misfortune"])),
         ("Goal",            cfl(n["goal"]))
     ]])
     return f"""
@@ -275,7 +278,8 @@ def make_npc():
         ("physical detail", "{characters:physical details}"),
         ("clothing",        "{characters:clothing}"),
         ("personality",     "{characters:personalities}"),
-        ("mannerism",       "{characters:mannerisms}")
+        ("mannerism",       "{characters:mannerisms}"),
+        ("misfortune",      "{characters:misfortunes}")
     ]:
         npc[key] = parse_table_option(s)
     return npc
