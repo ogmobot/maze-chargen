@@ -117,7 +117,7 @@
         "infamy", "infiltrate {cities:factions}", "justic", "kidnap {*npc}", "lead {cities:factions}", "learning",
         "locate {*npc}", "love", "mastery", "power", "reach {wilderness:structures}", "rescue {*npc}",
         "resolve dispute", "restore {cities:factions}", "reveal a secret", "revenge", "sabotage {cities:factions}", "serve a deity",
-        "serve evil", "serve {cities:faction}", "serve ideology", "serve leader", "serve the needy", "wealth"
+        "serve evil", "serve {cities:factions}", "serve ideology", "serve leader", "serve the needy", "wealth"
     ],
     "misfortunes": [
         "abandoned", "addicted", "arrested", "blackmailed", "burgled", "challenged",

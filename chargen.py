@@ -332,6 +332,7 @@ def main():
     global tables
     tables["abilities"] = load_tables("./tables-abilities.json")
     tables["characters"] = load_tables("./tables-characters.json")
+    tables["cities"] = load_tables("./tables-cities.json")
     tables["items"] = load_tables("./tables-items.json")
     tables["magic"] = load_tables("./tables-magic.json")
 

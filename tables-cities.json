@@ -1,0 +1,43 @@
+{
+    "themes": [
+        "{monsters:animals}"
+    ],
+    "events": [
+        "assassination"
+    ],
+    "district themes": [
+        "catacombs"
+    ],
+    "upper class buildings": [
+        "academy"
+    ],
+    "lower class buildings": [
+        "apothecary"
+    ],
+    "activities": [
+        "abduct"
+    ],
+    "building rooms": [
+        "arboretum"
+    ],
+    "tactical street features": [
+        "arcade"
+    ],
+    "tactical building features": [
+        "{monsters:animals} nests"
+    ],
+    "factions": [
+        "art movement", "beggar's guild", "black market", "brotherhood", "city guard", "conspiracy",
+        "craft guild", "crime family", "crime ring", "dark cult", "explorer's club", "free company",
+        "gourmand club", "heist crew", "heretical sect", "high council", "hired killers", "local militia",
+        "national church", "noble house", "outlander clan", "outlaw gang", "political party", "religious order",
+        "religious sect", "resistance", "royal army", "royal house", "scholar's circle", "secret society",
+        "spy network", "street artists", "street gang", "street musicians", "theater troupe", "trade company"
+    ],
+    "faction traits": [
+        "bankrupt"
+    ],
+    "faction goals": [
+        "advise leader"
+    ]
+}
