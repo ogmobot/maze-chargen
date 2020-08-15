@@ -12,7 +12,7 @@ def load_tables(filename):
     return ts
 
 def parse_table_option(s):
-    m = re.search("{(.*)}", s)
+    m = re.search("{([^}]*)}", s)
     # m[0] = {foo:bar}
     # m[1] = foo:bar
     if not m:
@@ -21,7 +21,8 @@ def parse_table_option(s):
     elif m[1].startswith("*"):
         # Special cases
         if m[1] == "*treasure":
-            pass
+            # TODO treasure name
+            return parse_table_option(s.replace(m[0], "the Amulet of Yendor"))
         elif m[1] == "*npc":
             # TODO make actual NPC?
             return parse_table_option(s.replace(m[0], make_random_name()))

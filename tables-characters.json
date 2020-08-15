@@ -115,8 +115,8 @@
         "a better life", "acceptance", "acquire {*treasure}", "craft {*treasure}", "destroy {cities:factions}", "destroy {*treasure}",
         "enlightenment", "fame", "found {cities:factions}", "freedom", "glory", "impress {*npc}",
         "infamy", "infiltrate {cities:factions}", "justic", "kidnap {*npc}", "lead {cities:factions}", "learning",
-        "locate {*npc}", "love", "mastery", "power", "reach location", "rescue {*npc}",
-        "resolve dispute", "restore {cities:factions}", "reveal a secret", "revenge", "sabotage {cities:faction}", "serve a deity",
+        "locate {*npc}", "love", "mastery", "power", "reach {wilderness:structures}", "rescue {*npc}",
+        "resolve dispute", "restore {cities:factions}", "reveal a secret", "revenge", "sabotage {cities:factions}", "serve a deity",
         "serve evil", "serve {cities:faction}", "serve ideology", "serve leader", "serve the needy", "wealth"
     ],
     "misfortunes": [
