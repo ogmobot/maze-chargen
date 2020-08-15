@@ -1,0 +1,76 @@
+{
+    "categories": [
+        "physical effects, physical forms",
+        "physical effects, ethereal forms",
+        "ethereal effects, physical forms",
+        "ethereal effects, ethereal forms",
+        "physical elements, physical forms",
+        "physical elements, ethereal forms",
+        "ethereal elements, physical forms",
+        "ethereal elements, ethereal forms",
+        "physical effects, physical elements",
+        "physical effects, ethereal elements",
+        "ethereal effects, physical elements",
+        "ethereal effects, ethereal elements"
+    ],
+    "physical effects": [
+        "animating", "attracting", "binding", "blossoming", "consuming", "creeping",
+        "crushing", "diminishing", "dividing", "duplicating", "enveloping", "expanding",
+        "fusing", "grasping", "hastening", "hindering", "illuminating", "imprisoning",
+        "levitating", "opening", "petrifying", "phasing", "piercing", "pursuing",
+        "reflecting", "regenerating", "rending", "repelling", "resurrecting", "screaming",
+        "sealing", "shapeshifting", "shielding", "spawning", "transmuting", "transporting"
+    ],
+    "physical elements": [
+        "acid", "amber", "bark", "blood", "bone", "brine",
+        "clay", "crow", "crystal", "ember", "flesh", "fungus",
+        "glass", "honey", "ice", "insect", "wood", "lava",
+        "moss", "obsidian", "oil", "poison", "rat", "salt",
+        "sand", "sap", "serpent", "slime", "stone", "tar",
+        "thorn", "vine", "water", "wine", "wood", "worm"
+    ],
+    "physical forms": [
+        "altar", "armor", "arrow", "beast", "blade", "cauldron",
+        "chain", "chariot", "claw", "cloak", "colossus", "crown",
+        "elemental", "eye", "fountain", "gate", "golem", "hammer",
+        "horn", "key", "mask", "monolith", "pit", "prison",
+        "sentinel", "servant", "shield", "spear", "steed", "swarm",
+        "tentacle", "throne", "torch", "trap", "wall", "web"
+    ],
+    "ethereal effects": [
+        "avenging", "banishing", "bewildering", "blinding", "charming", "communicating",
+        "compelling", "concealing", "deafening", "deceiving", "deciphering", "disguising",
+        "dispelling", "emboldening", "encoding", "energizing", "enlightening", "enraging",
+        "excruciating", "foreseeing", "intoxicating", "maddening", "mesmerizing", "mindreading",
+        "nullifying", "paralyzing", "revealing", "revolting", "scrying", "silencing",
+        "soothing", "summoning", "terrifying", "warding", "wearying", "withering"
+    ],
+    "ethereal elements": [
+        "ash", "chaos", "distortion", "dream", "dust", "echo",
+        "ectoplasm", "fire", "fog", "ghost", "harmony", "heat",
+        "light", "lightning", "memory", "mind", "mutation", "negation",
+        "plague", "plasma", "probability", "rain", "rot", "shadow",
+        "smoke", "snow", "soul", "star", "stasis", "steam",
+        "thunder", "time", "void", "warp", "whisper", "wind"
+    ],
+    "ethereal forms": [
+        "aura", "beacon", "beam", "blast", "blob", "bolt",
+        "bubble", "call", "cascade", "circle", "cloud", "coil",
+        "cone", "cube", "dance", "disk", "field", "form",
+        "gaze", "loop", "moment", "nexus", "portal", "pulse",
+        "pyramid", "ray", "shard", "sphere", "spray", "storm",
+        "swarm", "torrent", "touch", "vortex", "wave", "word"
+    ],
+    "mutations": [
+    ],
+    "insanities": [
+        "always lies", "always polite", "believes they are {*an:monsters:animals}", "cannot count", "cannot lie", "faceblind",
+        "fears birds", "fears blood", "fears books", "fears darkness", "fears fire", "fears gold",
+        "fears horses", "fears iron", "fears music", "fears own hand", "fears PC", "fears rain",
+        "fears rivers", "fears silence", "fears sleep", "fears sunlight", "fears the moon", "fears trees",
+        "believes they are a genius", "believes they are gorgeous", "hates violence", "belives they are invisible", "believes they are invulnerable", "believes they are {monsters:abilities}",
+        "believes they have {monsters:features}", "believes they are {monsters:traits}", "must sing", "new personality {characters:personalities}", "says thoughts", "sees dead people"
+    ],
+    "omens": [
+    ]
+}

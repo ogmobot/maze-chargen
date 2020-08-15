@@ -1,0 +1,159 @@
+{
+    "appearances": [
+        "aquiline", "athletic", "barrel-chested", "boney", "brawny", "brutish",
+        "bullnecked", "chiseled", "coltish", "corpulent", "craggy", "delicate",
+        "furrowed", "gaunt", "gorgeous", "grizzled", "haggard", "handsome",
+        "hideous", "lanky", "pudgy", "ripped", "rosy", "scrawny",
+        "sinewy", "slender", "slumped", "solid", "square-jawed", "statuesque",
+        "towering", "trim", "weathered", "willowy", "wiry", "wrinkled"
+    ],
+    "physical details": [
+        "acid scars", "battle scars", "birthmark", "braided hair", "brand mark", "broken nose",
+        "bronze skinned", "burn scars", "bushy eyebrows", "curly hair", "dark skinned", "dreadlocks",
+        "exotic accent", "flogging scars", "freckles", "gold tooth", "hoarse voice", "huge beard",
+        "long hair", "matted hair", "missing ear", "missing teeth", "mustache", "muttonchops",
+        "nine fingers", "oiled hair", "one-eyed", "pale skinned", "piercings", "ritual scars",
+        "sallow skin", "shaved head", "sunburned", "tangled hair", "tattoos", "topknot"
+    ],
+    "clothing": [
+        "antique", "battle-torn", "bedraggled", "blood-stained", "ceremonial", "dated",
+        "decaying", "eccentric", "elegant", "embroidered", "exotic", "fashionable",
+        "flamboyant", "food-stained", "formal", "frayed", "frumpy", "garish",
+        "grimy", "haute couture", "lacey", "livery", "mud-stained", "ostentatious",
+        "oversized", "patched", "patterned", "perfumed", "practical", "rumpled",
+        "sigils", "singed", "tasteless", "undersized", "wine-stained", "worn out"
+    ],
+    "personalities": [
+        "bitter", "brave", "cautious", "chipper", "contrary", "cowardly",
+        "cunning", "driven", "entitled", "gregarious", "grumpy", "heartless",
+        "honor-bound", "hotheaded", "inquisitive", "irascible", "jolly", "know-it-all",
+        "lazy", "loyal", "menacing", "mopey", "nervous", "protective",
+        "righteous", "rude", "sarcastic", "savage", "scheming", "serene",
+        "spacey", "stoic", "stubborn", "stuck-up", "suspicious", "wisecracking"
+    ],
+    "mannerisms": [
+        "anecdotes", "breathy", "chuckles", "clipped", "cryptic", "deep voice",
+        "drawl", "enunciates", "flowery speech", "gravelly voice", "highly formal", "hypnotic",
+        "interrupts", "laconic", "laughs", "long pauses", "melodious", "monotone",
+        "mumbles", "narrates", "overly casual", "quaint sayings", "rambles", "random facts",
+        "rapid-fire", "rhyming", "robotic", "slow speech", "speechifies", "squeaky",
+        "street slang", "stutters", "talks to self", "trails off", "very loud", "whispers"
+    ],
+    "civilized professions": [
+        "acolyte", "actor", "apothecary", "baker", "barber", "blacksmith",
+        "brewer", "bureaucrat", "butcher", "carpenter", "clockmaker", "courier",
+        "courtier", "diplomat", "fishmonger", "guard", "haberdasher", "innkeeper",
+        "item-seller", "jeweler", "knight", "locksmith", "mason", "miller",
+        "musician", "noble", "painter", "priest", "scholar", "scribe",
+        "sculptor", "shipwright", "soldier", "tailor", "taxidermist", "wigmaker"
+    ],
+    "underworld professions": [
+        "alchemist", "beggar-prince", "blackmailer", "bounty-hunter", "chimney sweep", "coin-clipper",
+        "contortionist", "counterfeiter", "cultist", "cutpurse", "debt-collector", "deserter",
+        "fence", "fortuneteller", "galley slave", "gambler", "gravedigger", "headsman",
+        "hedge knight", "highwayman", "housebreaker", "kidnapper", "mad prophet", "mountebank",
+        "peddler", "pit-fighter", "poisoner", "rat-catcher", "scrivener", "sellsword",
+        "slave", "smuggler", "street performer", "tattooist", "urchin", "userer"
+    ],
+    "wilderness professions": [
+        "apiarist", "bandit", "caravan guard", "caravaneer", "druid", "exile",
+        "explorer", "farmer", "fisherman", "forager", "fugitive", "hedge wizard",
+        "hermit", "hunter", "messenger", "minstrel", "monk", "monster hunter",
+        "outlander", "tinker", "pilgrim", "poacher", "raider", "ranger",
+        "sage", "scavenger", "scout", "shepherd", "seer", "surveyor",
+        "tinker", "tomb raider", "trader", "trapper", "witch", "woodcutter"
+    ],
+    "female names": [
+        "adelaide", "alma", "barsaba", "beatrix", "bianca", "cleopha",
+        "clover", "constance", "damaris", "daphne", "demona", "elsbeth",
+        "esme", "fern", "hester", "hippolyta", "jessamine", "jilly",
+        "morgot", "minerva", "nerissa", "odette", "olga", "orchid",
+        "pepper", "phoebe", "piety", "poppy", "silence", "sybil",
+        "trillby", "tuesday", "ursula", "vivian", "wendy", "zora"
+    ],
+    "male names": [
+        "balthazar", "basil", "bertram", "blaxton", "chadwick", "clovis",
+        "destrian", "ellis", "erasmus", "faustus", "finn", "fitzhugh",
+        "florian", "fox", "godwin", "hannibal", "jasper", "jiles",
+        "jules", "leopold", "merrick", "mortimer", "ogden", "orion",
+        "oswald", "percival", "peregrine", "quentin", "redmaine", "reinhold",
+        "silas", "stilton", "stratford", "tenpiece", "waverly", "webster"
+    ],
+    "upper class surnames": [
+        "belvedere", "bithesea", "calaver", "carvolo", "de rippe", "droll",
+        "dunlow", "edevane", "erelong", "febland", "fernsby", "fisk",
+        "gastrell", "girdwood", "gorgon", "grimeson", "gruger", "hitheryon",
+        "la marque", "malmora", "miter", "oblington", "onymous", "phillifent",
+        "portendorfer", "romatet", "rothery", "skorbeck", "slora", "southwark",
+        "stavish", "vandermeer", "wellbelove", "westergren", "wexley", "wilberforce"
+    ],
+    "lower class surnames": [
+        "barrow", "beetleman", "berrycloth", "birdwhistle", "bobich", "chips",
+        "coffin", "crumpling", "culpepper", "dankworth", "digworthy", "dreggs",
+        "gimble", "graveworm", "greelish", "hardwick", "hatman", "hovel",
+        "knibbs", "midnighter", "needle", "nethercoat", "pestle", "relish",
+        "rumbold", "rummage", "sallow", "saltmarsh", "silverless", "skitter",
+        "slee", "slitherly", "stoker", "tarwater", "tumbler", "villin"
+    ],
+    "assets": [
+        "authority", "avoids detection", "calls in favors", "charming", "cooks the books", "erases evidence",
+        "excellent liar", "extremely rich", "{cities:factions}-leader", "{cities:factions}-member", "feared", "fortified base",
+        "gorgeous", "hears rumors", "huge family", "huge library", "impersonator", "interrogator",
+        "knows a guy", "knows a way in", "launders money", "learned", "local celebrity", "local knowledge",
+        "loyal henchmen", "middling oracle", "nothing to lose", "owns the guards", "powerful spouse", "procures gear",
+        "pulls the strings", "secret lab", "sells contraband", "smuggles goods", "spy network", "war hero"
+    ],
+    "liabilities": [
+        "addiction", "alcoholic", "corrupt ally", "coward", "decadent", "forbidden love",
+        "gambler", "glutton", "greedy", "heretic", "huge debts", "imposter",
+        "{magic:insanities}", "jealous", "leaves evidence", "many enemies", "misinformed", "money trail",
+        "narcissist", "needs medicine", "OCD", "paranoid", "partyer", "poor equipment",
+        "protective", "scandalous", "softhearted", "strict routines", "superstitious", "suspicious",
+        "temper", "trusting", "vulnerable base", "wanted", "weak-willed", "widely despised"
+    ],
+    "npc goals": [
+        "a better life", "acceptance", "acquire {*treasure}", "craft {*treasure}", "destroy {cities:factions}", "destroy {*treasure}",
+        "enlightenment", "fame", "found {cities:factions}", "freedom", "glory", "impress {*npc}",
+        "infamy", "infiltrate {cities:factions}", "justic", "kidnap {*npc}", "lead {cities:factions}", "learning",
+        "locate {*npc}", "love", "mastery", "power", "reach location", "rescue {*npc}",
+        "resolve dispute", "restore {cities:factions}", "reveal a secret", "revenge", "sabotage {cities:faction}", "serve a deity",
+        "serve evil", "serve {cities:faction}", "serve ideology", "serve leader", "serve the needy", "wealth"
+    ],
+    "misfortunes": [
+        "abandoned", "addicted", "arrested", "blackmailed", "burgled", "challenged",
+        "condemned", "crippled", "cursed", "defrauded", "demoted", "depressed",
+        "discredited", "dismissed", "disowned", "exiled", "famished", "forgotten",
+        "framed", "haunted", "humiliated", "impoverished", "kidnapped", "lost",
+        "mobbed", "mutilated", "overworked", "poisoned", "pursued", "rejected",
+        "replaced", "robbed", "sick", "sued", "suspected", "transformed"
+    ],
+    "missions": [
+        "apprehend {*npc}", "assassinate {*npc}", "blackmail {*npc}", "burgle {*npc}", "chart {wilderness:regions}", "convince {*npc}",
+        "deface {cities:upper class buildings}", "defraud {*npc}", "deliver {*treasure}", "destroy {*treasure}", "discredit {*npc}", "escort {*npc}",
+        "exfiltrate {cities:factions}", "extort {*npc}", "follow {*npc}", "frame {*npc}", "impersonate {*npc}", "impress {*npc}",
+        "infiltrate {cities:factions}", "interrogate {*npc}", "investigate {cities:factions}", "kidnap {*npc}", "locate {*npc}", "plant {*treasure}",
+        "protect {*npc}", "raid {dungeons:forms}", "replace {*treasure}", "retrieve {*treasure}", "rob {*npc}", "ruin {cities:upper class buildings}",
+        "sabotage {cities:factions}", "smuggle {*treasure}", "surveil {cities:factions}", "take over {cities:factions}", "terrorize {cities:factions}", "threaten {*npc}"
+    ],
+    "methods": [
+        "alchemy"
+    ],
+    "secrets": [
+        "addicted"
+    ],
+    "reputations": [
+        "ambitious"
+    ],
+    "hobbies": [
+        "archaeology"
+    ],
+    "relationships": [
+        "adviser"
+    ],
+    "divine domains": [
+        "{monsters:animals}"
+    ],
+    "after the party": [
+        "absurd boasts"
+    ]
+}

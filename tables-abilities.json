@@ -1,0 +1,41 @@
+{
+    "ability names": [
+        "STR",
+        "DEX",
+        "WIL"
+    ],
+    "abilities": [
+        [2, 1, 0],
+        [2, 0, 1],
+        [1, 2, 0],
+        [0, 2, 1],
+        [1, 0, 2],
+        [0, 1, 2]
+    ],
+    "features": [
+        "bonus 1 ATTACK",
+        "bonus 1 SPELL SLOTS",
+        "path"
+    ],
+    "paths": {
+        "briarborn": [
+            "tracking",
+            "foraging",
+            "survival"
+        ],
+        "fingersmith": [
+            "tinkering",
+            "picking locks",
+            "picking pockets"
+        ],
+        "roofrunner": [
+            "climbing",
+            "leaping",
+            "balancing"
+        ],
+        "shadowjack": [
+            "moving silently",
+            "hiding in shadows"
+        ]
+    }
+}
