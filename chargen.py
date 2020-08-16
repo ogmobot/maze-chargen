@@ -94,15 +94,14 @@ def make_character(character_level=1):
     # lead to situations like female adventurers wearing a mustache or male
     # adventurers wearing haute couture. This is fine. Players can, of
     # course, reroll any of these traits or choose their own.)
-    for (table_name, caption) in [
-        ("appearances",            "Appearance:      "),
-        ("physical details",       "Physical detail: "),
-        ("underworld professions", "Background:      "),
-        ("personalities",          "Personality:     "),
-        ("mannerisms",             "Mannerism:       ")
+    for (caption, s) in [
+        ("Appearance:      ", "{characters:appearances}"),
+        ("Physical detail: ", "{characters:physical details}"),
+        ("Background:      ", "{characters:underworld professions}"),
+        ("Personality:     ", "{characters:personalities}"),
+        ("Mannerism:       ", "{characters:mannerisms}")
     ]:
-        var = parse_table_option(f"{{characters:{table_name}}}")
-        c["NOTES"].append(f"{caption}{cfl(var)}")
+        c["NOTES"].append(f"{caption}{cfl(parse_table_option(s))}")
     # Clothes are always worn, sometimes under armor
     clothing = parse_table_option("{characters:clothing}")
     c["WORN"].append(f"clothes ({clothing})")
