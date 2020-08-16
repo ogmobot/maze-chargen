@@ -388,11 +388,27 @@ def main():
         default=["0"],
         help="number of NPCs to generate")
     args = parser.parse_args()
-    characters = abs(int(args.characters[0]))
-    level = abs(int(args.level[0]))
-    names = abs(int(args.names[0]))
-    spells = abs(int(args.spells[0]))
-    npcs = abs(int(args.npcs[0]))
+
+    try:
+        characters = abs(int(args.characters[0]))
+    except ValueError:
+        characters = 0
+    try:
+        level = abs(int(args.level[0]))
+    except ValueError:
+        level = 1
+    try:
+        names = abs(int(args.names[0]))
+    except ValueError:
+        names = 0
+    try:
+        spells = abs(int(args.spells[0]))
+    except ValueError:
+        spells = 0
+    try:
+        npcs = abs(int(args.npcs[0]))
+    except ValueError:
+        npcs = 0
 
     if characters + names + spells + npcs == 0:
         # Interactive mode
