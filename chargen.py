@@ -111,7 +111,9 @@ def make_character(character_level=1):
     while len(c["SPELLS"]) < c["SPELL SLOTS"]:
         c["SPELLS"].append(make_random_spell())
     # Record name, level and XP
-    c["NAME"] = make_random_name()
+    # Assume 4-in-6 adventurers are male
+    gender = random.choices(["male", "female"], [4, 2]).pop()
+    c["NAME"] = make_random_name(gender)
     # (Level and XP calculated above)
     return c
 
@@ -284,13 +286,11 @@ def make_npc():
         npc[key] = parse_table_option(s)
     return npc
 
-def make_random_name():
-    # Assume most adventurers (4 in 6) are male
-    # (This seems consistent with pulp fantasy)
-    gender = random.choices(["male", "female"], (4, 2)).pop()
+def make_random_name(gender=None):
+    if not gender:
+        gender = random.choice(["male", "female"])
     firstname = parse_table_option(f"{{characters:{gender} names}}")
-    # Assume most adventurers (4 in 6) have lower class surnames
-    # (This seems consistent with pulp fantasy)
+    # Assume most people (4 in 6) have lower class surnames
     society = random.choices(["lower class", "upper class"], (4, 2)).pop()
     if society == "upper class" and random.randint(1, 36) == 1:
         # "This table can also be used for upper-class first names,
