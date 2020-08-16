@@ -1,5 +1,5 @@
 {
-    "items": [
+    "starting items": [
         "animal scent", "bear trap", "bedroll", "caltrops", "chain (10 ft.)", "chalk",
         "chisel", "crowbar", "fishing net", "glass marbles", "glue", "grappling hook",
         "grease", "hacksaw", "hammer", "hand drill", "horn", "iron spikes",
@@ -14,7 +14,12 @@
         "belt", "blouse", "boots", "bracelet", "breastplate", "brigandine"
     ],
     "weapon items": [
-        "arming sword", "backsword", "battleaxe", "blowpipe", "claymore", "club"
+        "arming sword", "backsword", "battleaxe", "blowpipe", "claymore", "club",
+        "crossbow", "cutlass", "dagger", "flail", "flanged mace", "glaive",
+        "halberd", "hammer", "hatchet", "horsebow", "hunting knife", "lance",
+        "longbow", "longsword", "mace", "maul", "morningstar", "pike",
+        "scimitar", "shortbow", "sickle", "sling", "spear", "staff",
+        "stake", "stiletto", "throwing axe", "warhammer", "warpick", "whip"
     ],
     "book subjects": [
         "alchemy", "art", "astrology", "blackmail", "charts & maps", "conspiracies"
@@ -44,23 +49,49 @@
     ],
     "weapon names": {
         "light": [
+            "backsword",
             "axe",
+            "club",
+            "cutlass",
             "dagger",
-            "mace",
-            "short sword",
             "flail",
-            "one-handed spear"
+            "flanged mace",
+            "hammer",
+            "hatchet",
+            "hunting knife",
+            "mace",
+            "scimitar",
+            "sickle",
+            "stake",
+            "stiletto",
+            "whip"
         ],
         "heavy": [
-            "spear",
+            "arming sword",
+            "battleaxe",
+            "claymore",
+            "glaive",
             "halberd",
-            "long sword",
-            "warhammer"
+            "longsword",
+            "maul",
+            "morningstar",
+            "pike",
+            "spear",
+            "staff",
+            "warhammer",
+            "warpick"
         ],
         "ranged": [
-            "bow",
+            "blowpipe",
             "crossbow",
-            "sling"
+            "longbow",
+            "shortbow",
+            "sling",
+            "throwing axe"
+        ],
+        "horseback": [
+            "lance",
+            "horsebow"
         ]
     },
     "armor": {

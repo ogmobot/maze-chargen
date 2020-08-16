@@ -81,7 +81,7 @@ def make_character(character_level=1):
     # Choose six items
     for i in range(6):
         # Duplicates are fine; every item takes a different slot.
-        c["BACKPACK"].append(parse_table_option("{items:items}"))
+        c["BACKPACK"].append(parse_table_option("{items:starting items}"))
     # Choose combat gear
     grant_armor(c, "light armor")
     grant_armor(c, "shield")
@@ -205,7 +205,7 @@ def grant_armor(character, armor):
         return True
 
 def grant_weapon(character, weapon_category):
-    weapon = random.choice(tables["items"]["weapon names"][weapon_category])
+    weapon = parse_table_option(f"{{items:weapon names:{weapon_category}}}")
     weapon_data = tables["items"]["weapons"][weapon_category]
     weapon_desc = f"{weapon} ({weapon_category})"
     if not character["HANDS"]:
