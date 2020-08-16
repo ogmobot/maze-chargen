@@ -112,7 +112,7 @@
         "temper", "trusting", "vulnerable base", "wanted", "weak-willed", "widely despised"
     ],
     "npc goals": [
-        "a better life", "acceptance", "acquire {*treasure}", "craft {*treasure}", "destroy {cities:factions}", "destroy {*treasure}",
+        "a better life", "acceptance", "acquire {*treasure}", "craft {items:treasure items}", "destroy {cities:factions}", "destroy {*treasure}",
         "enlightenment", "fame", "found {cities:factions}", "freedom", "glory", "impress {*npc}",
         "infamy", "infiltrate {cities:factions}", "justic", "kidnap {*npc}", "lead {cities:factions}", "learning",
         "locate {*npc}", "love", "mastery", "power", "reach {wilderness:structures}", "rescue {*npc}",

@@ -21,8 +21,7 @@ def parse_table_option(s):
     elif m[1].startswith("*"):
         # Special cases
         if m[1] == "*treasure":
-            # TODO treasure name
-            return parse_table_option(s.replace(m[0], "the Amulet of Yendor"))
+            return parse_table_option(s.replace(m[0], make_random_treasure()))
         elif m[1] == "*npc":
             # TODO make actual NPC?
             return parse_table_option(s.replace(m[0], make_random_name()))
@@ -306,6 +305,29 @@ def make_random_spell():
     second_word = random.choice(tables["magic"][second_table])
     return f"{first_word} {second_word}".title()
 
+def make_random_treasure():
+        treasure_type = random.choices(["weapon", "item", "worn item", "book"], [2, 2, 1, 1]).pop()
+        treasure_boon = random.choices(["trait", "material"], [4, 2]).pop()
+        if treasure_type == "weapon":
+            treasure = parse_table_option("{items:weapon items}")
+        elif treasure_type == "item":
+            treasure = parse_table_option("{items:treasure items}")
+        elif treasure_type == "worn item":
+            treasure = parse_table_option("{items:worn items}")
+        elif treasure_type == "book":
+            treasure = parse_table_option("book of {items:book subjects}")
+        else:
+            treasure = "the Amulet of Yendor"
+
+        if treasure_boon == "trait":
+            boon = parse_table_option("{items:treasure traits}")
+        elif treasure_boon == "material":
+            boon = parse_table_option("{items:valuable materials}")
+        else:
+            boon = "mithril"
+
+        return f"{treasure} ({boon})"
+ 
 def do_menu(character_level=1):
     options = [
     #   (letter, description, function, return code)

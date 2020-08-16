@@ -8,13 +8,16 @@
         "ten foot pole", "tinderbox", "torch", "vial of acid", "vial of poison", "waterskin"
     ],
     "miscellaneous items": [
-        "bowl"
+        "bowl", "brass bell", "brooch", "carved figurine", "cup", "deck of cards"
     ],
     "worn items": [
-        "belt"
+        "belt", "blouse", "boots", "bracelet", "breastplate", "brigandine"
+    ],
+    "weapon items": [
+        "arming sword", "backsword", "battleaxe", "blowpipe", "claymore", "club"
     ],
     "book subjects": [
-        "alchemy"
+        "alchemy", "art", "astrology", "blackmail", "charts & maps", "conspiracies"
     ],
     "tool items": [
         "acid flask"
@@ -34,7 +37,10 @@
         "set of silverware", "spices", "spyglass", "tapestry", "telescope", "treasure map"
     ],
     "treasure traits": [
-        "altered"
+        "altered", "ancient", "blessed", "bulky", "compact", "consumable"
+    ],
+    "valuable materials": [
+        "alabaster", "amber", "aquamarine", "azurite", "beryl", "black pearl"
     ],
     "weapon names": {
         "light": [
