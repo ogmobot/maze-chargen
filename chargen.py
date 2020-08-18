@@ -94,14 +94,14 @@ def make_character(character_level=1):
     # lead to situations like female adventurers wearing a mustache or male
     # adventurers wearing haute couture. This is fine. Players can, of
     # course, reroll any of these traits or choose their own.)
-    for (caption, s) in [
-        ("Appearance:      ", "{characters:appearances}"),
-        ("Physical detail: ", "{characters:physical details}"),
-        ("Background:      ", "{characters:underworld professions}"),
-        ("Personality:     ", "{characters:personalities}"),
-        ("Mannerism:       ", "{characters:mannerisms}")
+    for (key, s) in [
+        ("appearance",        "{characters:appearances}"),
+        ("physical detail",   "{characters:physical details}"),
+        ("background",        "{characters:underworld professions}"),
+        ("personality",       "{characters:personalities}"),
+        ("mannerism",         "{characters:mannerisms}")
     ]:
-        c["NOTES"].append(f"{caption}{cfl(parse_table_option(s))}")
+        c[key] = parse_table_option(s)
     # Clothes are always worn, sometimes under armor
     clothing = parse_table_option("{characters:clothing}")
     c["WORN"].append(f"clothes ({clothing})")
@@ -124,7 +124,14 @@ WIL +{c["WIL"]}  HEALTH {"{:2}".format(c["HEALTH"])} ({c["MAX HEALTH"]})
 """
     for spell in c["SPELLS"]:
         left_panel += f"SPELL: {spell}\n"
-    notes_panel = "\n".join(c["NOTES"])
+    notes_panel = "\n".join(c["NOTES"]).strip()
+    notes_panel += "".join("\n{} {}".format(a, b) for a, b, in [
+        ("Appearance:     ", cfl(c["appearance"])),
+        ("Physical detail:", cfl(c["physical detail"])),
+        ("Background:     ", cfl(c["background"])),
+        ("Personality:    ", cfl(c["personality"])),
+        ("Mannerism:      ", cfl(c["mannerism"]))
+    ])
     equipment_panel = "\n".join([
         "HANDS: " + ", ".join(c["HANDS"]),
         "BELT:  " + ", ".join(c["BELT"]),
