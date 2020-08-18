@@ -137,15 +137,15 @@ WIL +{c["WIL"]}  HEALTH {"{:2}".format(c["HEALTH"])} ({c["MAX HEALTH"]})
         equipment_panel.strip()]))
 
 def format_npc(n):
-    notes = "\n".join(["{:<16} {}".format(a + ":", b) for a, b in [
-        ("Asset",           cfl(n["asset"])),
-        ("Liability",       cfl(n["liability"])),
-        ("Appearance",      cfl(n["appearance"])),
-        ("Physical detail", cfl(n["physical detail"])),
-        ("Personality",     cfl(n["personality"])),
-        ("Mannerism",       cfl(n["mannerism"])),
-        ("Misfortune",      cfl(n["misfortune"])),
-        ("Goal",            cfl(n["goal"]))
+    notes = "\n".join(["{} {}".format(a, b) for a, b in [
+        ("Asset:          ", cfl(n["asset"])),
+        ("Liability:      ", cfl(n["liability"])),
+        ("Appearance:     ", cfl(n["appearance"])),
+        ("Physical detail:", cfl(n["physical detail"])),
+        ("Personality:    ", cfl(n["personality"])),
+        ("Mannerism:      ", cfl(n["mannerism"])),
+        ("Misfortune:     ", cfl(n["misfortune"])),
+        ("Goal:           ", cfl(n["goal"]))
     ]])
     return f"""
 {n["name"]}, the {n["profession"]}.
