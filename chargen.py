@@ -265,8 +265,8 @@ def gain_a_level(c):
             feature = parse_table_option("{abilities:features}")
             if apply_bonus(c, feature):
                 break
-        if tries == 99:
-            print("Warning: no bonus from reaching LVL {new_level}.")
+        else:
+            print(f"Warning: no bonus from reaching LVL {new_level}.")
     else:
         ability = parse_table_option("{abilities:ability names}")
         apply_bonus(c, f"bonus 1 {ability}")
@@ -369,6 +369,10 @@ def main():
     tables["magic"] = load_tables("./tables-magic.json")
 
     parser = argparse.ArgumentParser()
+    parser.add_argument("-i",
+        dest="interactive",
+        action="store_true",
+        help="interactive mode (default if no other options specified)")
     parser.add_argument("-c",
         dest="characters",
         nargs=1,
@@ -417,11 +421,7 @@ def main():
     except ValueError:
         npcs = 0
 
-    if characters + names + spells + npcs == 0:
-        # Interactive mode
-        while do_menu(level):
-            pass
-    else:
+    if characters + names + spells + npcs > 0:
         # Batch mode
         for i in range(characters):
             print(format_character_sheet(make_character(level)))
@@ -433,6 +433,10 @@ def main():
         for i in range(npcs):
             print(format_npc(make_npc()))
             print()
+    if characters + names + spells + npcs == 0 or args.interactive:
+        # Interactive mode
+        while do_menu(level):
+            pass
     return
 
 if __name__ == "__main__":
