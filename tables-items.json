@@ -44,7 +44,7 @@
     "treasure traits": [
         "altered", "ancient", "blessed", "bulky", "compact", "consumable",
         "cultural value", "cursed", "damaged", "disguised", "draws enemies", "{magic:physical effects}", "{magic:ethereal effects}",
-        "{magic:physical elements}", "{magic:ethereal elements}", "embellished", "encoded", "exotic", "extra-planar", "famous",
+        "{magic:ethereal elements}", "embellished", "encoded", "exotic", "extra-planar", "famous",
         "forbidden", "fragile", "heavy", "immovable", "impracticable", "indestructible",
         "intelligent", "masterwork", "military value", "non-human", "owned", "partial",
         "political value", "religious value", "repaired", "royal", "toxic", "vile"
