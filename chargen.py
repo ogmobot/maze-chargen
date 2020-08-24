@@ -312,25 +312,30 @@ def make_random_spell():
     return f"{first_word} {second_word}".title()
 
 def make_random_treasure():
-        treasure_type = random.choices(["weapon", "item", "worn item", "book"], [2, 2, 1, 1]).pop()
-        treasure_boon = random.choices(["trait", "material"], [4, 2]).pop()
-        if treasure_type == "weapon":
-            treasure = parse_table_option("{items:weapon items}")
-        elif treasure_type == "item":
-            treasure = parse_table_option("{items:treasure items}")
-        elif treasure_type == "worn item":
-            treasure = parse_table_option("{items:worn items}")
-        elif treasure_type == "book":
-            treasure = parse_table_option("book of {items:book subjects}")
-        else:
-            treasure = "the Amulet of Yendor"
+        treasure_type = random.choices(*zip(*[
+            ("{items:weapon items}",          2),
+            ("{items:treasure items}",        2),
+            ("{items:worn items}",            1),
+            ("book of {items:book subjects}", 1)])).pop()
+        treasure_props = set()
+        bonus_trait = False
+        bonus_mat = False
+        while len(treasure_props) == 0 or bonus_trait or bonus_mat:
+            trait_roll = random.randint(1, 6)
+            # 1 = no trait
+            # 6 = roll again
+            if trait_roll > 1:
+                treasure_props.add("{items:treasure traits}")
+            bonus_trait = (trait_roll == 6)
+            mat_roll = random.randint(1, 6)
+            # 1-3 = no special mat
+            # 6 = roll again
+            if mat_roll > 3:
+                treasure_props.add("{items:valuable materials}")
+            bonus_mat = (mat_roll == 6)
 
-        if treasure_boon == "trait":
-            boon = parse_table_option("{items:treasure traits}")
-        elif treasure_boon == "material":
-            boon = parse_table_option("{items:valuable materials}")
-        else:
-            boon = "mithril"
+        treasure = parse_table_option(treasure_type)
+        boon = parse_table_option(", ".join(sorted(treasure_props)))
 
         return f"{treasure} ({boon})"
  
@@ -398,8 +403,14 @@ def main():
         nargs=1,
         default=["0"],
         help="number of NPCs to generate")
+    parser.add_argument("-t",
+        dest="treasures",
+        nargs=1,
+        default=["0"],
+        help="number of treasures to generate")
     args = parser.parse_args()
 
+    #TODO get rid of this repetition
     try:
         characters = abs(int(args.characters[0]))
     except ValueError:
@@ -420,20 +431,24 @@ def main():
         npcs = abs(int(args.npcs[0]))
     except ValueError:
         npcs = 0
+    try:
+        treasures = abs(int(args.treasures[0]))
+    except ValueError:
+        treasures = 0
 
-    if characters + names + spells + npcs > 0:
+    do_batch = (characters + names + spells + npcs + treasures > 0)
+
+    if do_batch:
         # Batch mode
-        for i in range(characters):
-            print(format_character_sheet(make_character(level)))
-            print()
-        for i in range(names):
-            print(make_random_name())
-        for i in range(spells):
-            print(make_random_spell())
-        for i in range(npcs):
-            print(format_npc(make_npc()))
-            print()
-    if characters + names + spells + npcs == 0 or args.interactive:
+        for num_times, function in [
+            (characters, (lambda:(format_character_sheet(make_character(level)) + "\n"))),
+            (names,      make_random_name),
+            (spells,     make_random_spell),
+            (npcs,       (lambda:(format_npc(make_npc()) + "\n"))),
+            (treasures,  make_random_treasure)]:
+            for i in range(num_times):
+                print(function())
+    if (do_batch == False) or args.interactive:
         # Interactive mode
         while do_menu(level):
             pass
