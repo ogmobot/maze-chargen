@@ -336,7 +336,7 @@ def make_random_treasure():
             bonus_mat = (mat_roll == 6)
 
         treasure = parse_table_option(treasure_type)
-        boon = parse_table_option(", ".join(sorted(treasure_props)))
+        boon = ", ".join(sorted(parse_table_option(p) for p in treasure_props))
 
         return f"{treasure} ({boon})"
  
