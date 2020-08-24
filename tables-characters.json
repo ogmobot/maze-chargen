@@ -112,7 +112,7 @@
         "temper", "trusting", "vulnerable base", "wanted", "weak-willed", "widely despised"
     ],
     "npc goals": [
-        "a better life", "acceptance", "acquire {*treasure}", "craft {items:treasure items}", "destroy {cities:factions}", "destroy {*treasure}",
+        "a better life", "acceptance", "acquire treasure - {*treasure}", "craft item - {items:treasure items}", "destroy {cities:factions}", "destroy item - {*treasure}",
         "enlightenment", "fame", "found {cities:factions}", "freedom", "glory", "impress {*npc}",
         "infamy", "infiltrate {cities:factions}", "justic", "kidnap {*npc}", "lead {cities:factions}", "learning",
         "locate {*npc}", "love", "mastery", "power", "reach {wilderness:structures}", "rescue {*npc}",
@@ -129,11 +129,11 @@
     ],
     "missions": [
         "apprehend {*npc}", "assassinate {*npc}", "blackmail {*npc}", "burgle {*npc}", "chart {wilderness:regions}", "convince {*npc}",
-        "deface {cities:upper class buildings}", "defraud {*npc}", "deliver {*treasure}", "destroy {*treasure}", "discredit {*npc}", "escort {*npc}",
+        "deface {cities:upper class buildings}", "defraud {*npc}", "deliver item - {*treasure}", "destroy item - {*treasure}", "discredit {*npc}", "escort {*npc}",
         "exfiltrate {cities:factions}", "extort {*npc}", "follow {*npc}", "frame {*npc}", "impersonate {*npc}", "impress {*npc}",
-        "infiltrate {cities:factions}", "interrogate {*npc}", "investigate {cities:factions}", "kidnap {*npc}", "locate {*npc}", "plant {*treasure}",
-        "protect {*npc}", "raid {dungeons:forms}", "replace {*treasure}", "retrieve {*treasure}", "rob {*npc}", "ruin {cities:upper class buildings}",
-        "sabotage {cities:factions}", "smuggle {*treasure}", "surveil {cities:factions}", "take over {cities:factions}", "terrorize {cities:factions}", "threaten {*npc}"
+        "infiltrate {cities:factions}", "interrogate {*npc}", "investigate {cities:factions}", "kidnap {*npc}", "locate {*npc}", "plant item - {*treasure}",
+        "protect {*npc}", "raid {dungeons:forms}", "replace item - {*treasure}", "retrieve treasure - {*treasure}", "rob {*npc}", "ruin {cities:upper class buildings}",
+        "sabotage {cities:factions}", "smuggle item - {*treasure}", "surveil {cities:factions}", "take over {cities:factions}", "terrorize {cities:factions}", "threaten {*npc}"
     ],
     "methods": [
         "alchemy"
