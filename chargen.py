@@ -340,18 +340,26 @@ def make_random_treasure():
 
         return f"{treasure} ({boon})"
  
-def do_menu(character_level=1):
+def do_menu(prefs):
     options = [
     #   (letter, description, function, return code)
     #   A return code of False ends the loop.
         ("a", "Generate random character",
-            (lambda:format_character_sheet(make_character(character_level))), True),
+            (lambda:format_character_sheet(make_character(prefs.get("character level", 1)))), True),
         ("b", "Generate random name",
-            (lambda:make_random_name()), True),
+            make_random_name, True),
         ("c", "Generate random spell",
-            (lambda:make_random_spell()), True),
+            make_random_spell, True),
         ("d", "Generate random npc",
             (lambda:format_npc(make_npc())), True),
+        ("e", "Generate random treasures",
+            make_random_treasure, True),
+        ("l", f"Modify character level ({prefs.get('character level', 1)})",
+            (lambda:prefs.update(
+                (lambda s:
+                    {"character level": int(s)} if s.isnumeric() else {}
+                )(input("New character level: "))
+            )), True),
         ("q", "Quit",
             (lambda:None), False)]
     for t in options:
@@ -451,7 +459,11 @@ def main():
                 print(function())
     if (do_batch == False) or args.interactive:
         # Interactive mode
-        while do_menu(level):
+        prefs = {"character level": level}
+        try:
+            while do_menu(prefs):
+                pass
+        except EOFError:
             pass
     return
 
