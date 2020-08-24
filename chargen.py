@@ -318,15 +318,16 @@ def make_random_treasure():
             ("{items:worn items}",            1),
             ("book of {items:book subjects}", 1)])).pop()
         treasure_props = set()
-        bonus_trait = False
-        bonus_mat = False
-        while len(treasure_props) == 0 or bonus_trait or bonus_mat:
+        bonus_trait = True
+        bonus_mat = True
+        while bonus_trait:
             trait_roll = random.randint(1, 6)
             # 1 = no trait
             # 6 = roll again
             if trait_roll > 1:
                 treasure_props.add("{items:treasure traits}")
             bonus_trait = (trait_roll == 6)
+        while bonus_mat or (len(treasure_props) == 0):
             mat_roll = random.randint(1, 6)
             # 1-3 = no special mat
             # 6 = roll again
