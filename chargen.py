@@ -30,10 +30,10 @@ def parse_table_option(s):
             first = parse_table_option(first.rstrip())
             second = parse_table_option(second.lstrip())
             if second and second[0].lower() in "aeiou":
-                article = "an"
+                article = " an "
             else:
-                article = "a"
-            return f"{first} {article} {second}"
+                article = " a "
+            return f"{first}{article}{second}"
         else:
             # Can't find this special case
             return s
@@ -350,9 +350,9 @@ def do_menu(prefs):
             make_random_name, True),
         ("c", "Generate random spell",
             make_random_spell, True),
-        ("d", "Generate random npc",
+        ("d", "Generate random NPC",
             (lambda:format_npc(make_npc())), True),
-        ("e", "Generate random treasures",
+        ("e", "Generate random treasure",
             make_random_treasure, True),
         ("l", f"Modify character level ({prefs.get('character level', 1)})",
             (lambda:prefs.update(
