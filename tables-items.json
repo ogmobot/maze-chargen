@@ -11,7 +11,12 @@
         "bowl", "brass bell", "brooch", "carved figurine", "cup", "deck of cards"
     ],
     "worn items": [
-        "belt", "blouse", "boots", "bracelet", "breastplate", "brigandine"
+        "belt", "blouse", "boots", "bracelet", "breastplate", "brigandine",
+        "cincture", "cloak", "coat", "dress", "earring", "eyepatch",
+        "gauntlets", "gloves", "gown", "hat", "helmet", "hose",
+        "leather armor", "locket", "mail shirt", "mask", "necklace", "padded armor",
+        "plate mail", "ring", "robe", "sandals", "scarf", "shirt",
+        "shoes", "skirt", "slippers", "socks", "trousers", "veil"
     ],
     "weapon items": [
         "arming sword", "backsword", "battleaxe", "blowpipe", "claymore", "club",
@@ -22,7 +27,12 @@
         "stake", "stiletto", "throwing axe", "warhammer", "warpick", "whip"
     ],
     "book subjects": [
-        "alchemy", "art", "astrology", "blackmail", "charts & maps", "conspiracies"
+        "alchemy", "art", "astrology", "blackmail", "charts & maps", "conspiracies",
+        "cooking", "criminals", "divination", "etiquette", "fashion", "genealogy",
+        "hagiography", "history", "personal notes", "language", "laws", "letters",
+        "lost empires", "lost places", "love poems", "monsters", "mythology", "odd customs",
+        "oratory", "propaganda", "prophecies", "siegecraft", "songs", "state secrets",
+        "sword fighting", "theology", "treasures", "war chronicle", "who's who", "witch-hunting"
     ],
     "tool items": [
         "acid flask"
@@ -50,7 +60,12 @@
         "political value", "religious value", "repaired", "royal", "toxic", "vile"
     ],
     "valuable materials": [
-        "alabaster", "amber", "aquamarine", "azurite", "beryl", "black pearl"
+        "alabaster", "amber", "aquamarine", "azurite", "beryl", "black pearl",
+        "bloodstone", "bone china", "chalcedony", "cinnabar", "coral", "diamond",
+        "ebony", "emerald", "fire agate", "garnet", "gold", "ivory",
+        "jade", "jasper", "jet", "lapis lazuli", "malachite", "moonstone",
+        "onyx", "opal", "pearl", "platinum", "porcelain", "ruby",
+        "sapphire", "serpentine", "silver", "star iron", "topaz", "turquoise"
     ],
     "weapon names": {
         "light": [
@@ -106,7 +121,7 @@
         },
         "heavy armor": {
             "slot": "WORN",
-            "bonus": 1
+            "bonus": 2
         },
         "shield": {
             "slot": "HANDS",
